@@ -13,15 +13,15 @@
     justify-content: flex-start;
     align-items: center;
     text-align: left;
-    max-width: 30vw;
+    max-width: 32vw;
     font-size: calc(11px + 1vw);
-    margin-left: 5vw;
+    margin-left: 2vw;
     padding-bottom: 17vh;
 
 }
 
 .sticky-photo {
-    width: 60vw;
+    width: 62vw;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -30,6 +30,7 @@
     height: 100vh;
     overflow: hidden;
     margin-bottom: 10vh;
+    margin-right: 2vw;
 }
 
 .photo-container {
