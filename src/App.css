@@ -42,6 +42,7 @@
                             'embedded-opentype', and 'svg' */
 }
 
+
 body {
   overflow-x: hidden;
   overscroll-behavior-y: none;
@@ -49,6 +50,7 @@ body {
   padding: 0;
   color: aliceblue;
   font-family: 'Fahkwang-Regular';
+  background: #131313;
 }
 
 main {

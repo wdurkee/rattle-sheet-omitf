@@ -30,6 +30,13 @@ function App() {
         options={
           {
             smooth: true,
+            smartphone: {
+              smooth: true
+            },
+            tablet: {
+              smooth: true
+            }
+
             // ... all available Locomotive Scroll instance options 
           }
         }
