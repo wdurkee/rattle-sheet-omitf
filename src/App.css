@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Anton';
+  src: local('Anton'), url(./fonts/Anton-Regular.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Futura Round Cond Light';
+  src: local('Futura Round Cond Light'), url(./fonts/Futura-Round-Cond-Light.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Futura Round Cond Medium';
+  src: local('Futura Round Cond Medium'), url(./fonts/Futura-Round-Cond-Medium.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: 'Fahkwang-Bold';
+  src: local('Fahkwang-Bold'), url(./fonts/Fahkwang-Bold.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Fahkwang-SemiBoldItalic';
+  src: local('Fahkwang-SemiBoldItalic'), url(./fonts/Fahkwang-SemiBoldItalic.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+  font-family: 'Fahkwang-Regular';
+  src: local('Fahkwang-Regular'), url(./fonts/Fahkwang-Regular.ttf) format('truetype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+body {
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  font-family: 'Fahkwang-Regular';
+}
+
+main {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  min-width: 100vw;
+  margin: 0;
+} 
+
+.section {
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  background: #131313;
+  margin: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.circle-logo {
+  position: fixed;
+  right: 2vw;
+  bottom: 2vw;
+  top: auto;
+  left: auto;
+  height: 30vw;
+  width: 30vw;
+  opacity: 0.05;
 }
+
+.sheet-logo {
+  position: fixed;
+  top: 8px;
+  left: 15px;
+  right: auto;
+  bottom: auto;
+  margin: 0 0;
+  font-size: 24px;
+  text-decoration: none;
+  color: #9e91ce;
+
+}
+
+.ellipse1 {
+  position: fixed;
+  right: -11vw;
+  bottom: -7.5vw;
+  top: auto;
+  left: auto;
+  height: 65vw;
+  width: 65vw;
+}
+.ellipse2 {
+  position: fixed;
+  right: -20.5vw;
+  bottom: -38.5vw;
+  top: auto;
+  left: auto;
+  height: 100vw;
+  width: 100vw;
+}
+
+.main-content {
+  z-index: 9999999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column;
+  background: transparent;
+}
+.noise {
+  z-index: 9999999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  opacity: .13;
+}
+
+/*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth {
+  overflow: hidden; }
+
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.has-scroll-smooth body {
+  overflow: hidden; }
+
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh; }
+
+[data-scroll-direction="horizontal"] [data-scroll-container] {
+  height: 100vh;
+  display: inline-block;
+  white-space: nowrap; }
+
+[data-scroll-direction="horizontal"] [data-scroll-section] {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  height: 100%; }
+
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 11px;
+  height: 100%;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0; }
+  .c-scrollbar:hover {
+    transform: scaleX(1.45); }
+  .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+    opacity: 1; }
+  [data-scroll-direction="horizontal"] .c-scrollbar {
+    width: 100%;
+    height: 10px;
+    top: auto;
+    bottom: 0;
+    transform: scaleY(1); }
+    [data-scroll-direction="horizontal"] .c-scrollbar:hover {
+      transform: scaleY(1.3); }
+
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab; }
+  .has-scroll-dragging .c-scrollbar_thumb {
+    cursor: -webkit-grabbing;
+    cursor: grabbing; }
+  [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+    right: auto;
+    bottom: 0; }

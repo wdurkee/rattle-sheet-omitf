@@ -1,0 +1,49 @@
+.right-photo-container {
+    min-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 10vh;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    max-width: 30vw;
+    font-size: calc(11px + 1vw);
+    margin-left: 5vw;
+    padding-bottom: 17vh;
+
+}
+
+.sticky-photo {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    margin-top: 5vh;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 10vh;
+}
+
+.photo-container {
+    display: block;
+    width: 100%;
+    min-height: 150%;
+    overflow: visible;
+    object-fit: contain;
+}
+
+
+.photo-1 {
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}

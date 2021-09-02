@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Fahkwang-Bold';
+    src: local('Fahkwang-Bold'), url(../fonts/Fahkwang-Bold.ttf) format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+  @font-face {
+    font-family: 'Fahkwang-SemiBoldItalic';
+    src: local('Fahkwang-SemiBoldItalic'), url(../fonts/Fahkwang-SemiBoldItalic.ttf) format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+.top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    min-height: 110vh;
+    min-width: 100vw;
+}
+
+.title-text {
+    font-size: calc(28px + 5vw);
+    font-family: 'Fahkwang-Bold';
+    max-height: 175px;
+    margin-left: 10vw;
+    margin-top: 45vh;
+    margin-right: 30vw;
+}
+
+.letters {
+    font-size: calc(12px + 2vw);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Fahkwang-SemiBoldItalic';
+    color: #9e91ce;
+    margin-left: 10vw;
+}
+/* top banner */
+.welcome-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cutout {
+    height: auto;
+    width: 50vw;
+    opacity: 0.5;
+}
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,20px,0);
+        opacity: 0
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+}
+
+.animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+.fadeInCircle {
+    animation: fadeInCircle forwards 5s;
+}
+
+.fadeInBlob {
+    animation: fadeInBlob forwards 0.4s;
+}
+
+@keyframes fadeInCircle {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 0.12;
+    }
+}
+
+@keyframes fadeInBlob {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 0.2;
+    }
+}
