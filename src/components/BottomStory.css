@@ -1,0 +1,10 @@
+.bottom-story-container {
+    height: 50vh;
+    width: 100vw;
+}
+
+.story-text {
+    font-size: calc(12px + 1vw);
+    padding-left: 10vw;
+    padding-right: 10vw;
+}

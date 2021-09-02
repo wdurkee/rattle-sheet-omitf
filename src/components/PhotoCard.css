@@ -1,0 +1,35 @@
+.photo-card {
+    height: 20vh;
+    width: 30vw;
+    margin-top: 7vh;
+}
+
+.photo-card-img {
+    height: 100px;
+    width: 100px;
+}
+
+.photo-card-subtitle {
+    text-align: left;
+}
+
+
+#card1 {
+    align-self: flex-end;
+}
+
+#card2 {
+    align-self: flex-start;
+}
+
+#card3 {
+    align-self: center;
+}
+
+#card4 {
+    align-self: flex-start;
+}
+
+#card5 {
+    align-self: flex-end;
+}

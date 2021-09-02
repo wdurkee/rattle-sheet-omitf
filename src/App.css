@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Rampart+One");
+
 @font-face {
   font-family: 'Anton';
   src: local('Anton'), url(./fonts/Anton-Regular.ttf) format('truetype');
@@ -90,6 +92,7 @@ main {
   font-size: 24px;
   text-decoration: none;
   color: #9e91ce;
+  font-family: "Rampart One"
 
 }
 

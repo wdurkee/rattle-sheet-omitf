@@ -7,6 +7,7 @@ import Top from './components/Top'
 import RightPhoto from './components/RightPhoto'
 import SideText from './components/SideText'
 import MiddlePhotos from './components/MiddlePhotos'
+import BottomStory from './components/BottomStory'
 
 
 
@@ -21,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <a className="sheet-logo" href="https://songcamp.mirror.xyz/" target="_blank" rel="noreferrer">onesheet</a>
+      <a className="sheet-logo" href="https://songcamp.mirror.xyz/" target="_blank" rel="noreferrer">funsheet</a>
       <img src={circleLogo} alt="Rattle" className="circle-logo fadeInCircle" />
       <img src={ellipse1} alt="e1" className="ellipse1 fadeInBlob" />
       <img src={ellipse2} alt="e2" className="ellipse2 fadeInBlob" />
@@ -44,6 +45,7 @@ function App() {
           <RightPhoto />
           <SideText />
           <MiddlePhotos />
+          <BottomStory />
         </main>
       </LocomotiveScrollProvider>
     </div>
