@@ -13,9 +13,9 @@ const MiddlePhotos = () => {
         <div data-scroll-section className="middle-photos-container">
             <PhotoCard cardID="card1" speed="-1" />
             <PhotoCard cardID="card2" speed="1" />
-            <PhotoCard cardID="card3" speed="3" />
-            <PhotoCard cardID="card4" speed="5" />
-            <PhotoCard cardID="card5" speed="8" />
+            <PhotoCard cardID="card3" speed="4" />
+            <PhotoCard cardID="card4" speed="2" />
+            <PhotoCard cardID="card5" speed="6" />
         </div>
     );
 }
