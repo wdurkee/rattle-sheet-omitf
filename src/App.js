@@ -37,10 +37,14 @@ function App() {
             smoothMobile: 0,
             smartphone: {
               smooth: !0,
+              multiplier: 2,
+              lerp: 0.2,
               breakpoint: 767
             },
             tablet: {
               smooth: !1,
+              multiplier: 2,
+              lerp: 0.2,
               breakpoint: 1024
             },
 
