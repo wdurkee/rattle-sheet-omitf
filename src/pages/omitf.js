@@ -88,11 +88,11 @@ const OMITF = () => {
 
                 <SideText />
                 <MiddlePhotos>
-                    <PhotoCard cardID="card1" speed="1" itemImage={rootsy} title="Signing a deal with Rootsy - One of the biggest Americana labels around, with Tom from Loose Records as their Executive A&R for his second record" />
-                    <PhotoCard cardID="card2" speed="2" itemImage={omitf7} title="Raised c.£150k in investment, gathering a lot of interest. For example Rattle investor Raul Biancardi told Alex 'Whatever space is left in your round, I want it'" />
-                    <PhotoCard cardID="card3" speed="4" itemImage={omitf9} title="Developed a company that he now lives off" />
-                    <PhotoCard cardID="card4" speed="-2" itemImage={omitf6} title="12,000 monthly plays on Spotify" />
-                    <PhotoCard cardID="card5" speed="5" itemImage={omitf10} title="Top 10 iTunes album" />
+                    <PhotoCard cardID="card1" speed="-1" itemImage={rootsy} title="Signing a deal with Rootsy - One of the biggest Americana labels around, with Tom from Loose Records as their Executive A&R for his second record" />
+                    <PhotoCard cardID="card2" speed="3" itemImage={omitf7} title="Raised c.£150k in investment, gathering a lot of interest. For example Rattle investor Raul Biancardi told Alex 'Whatever space is left in your round, I want it'" />
+                    <PhotoCard cardID="card3" speed="5" itemImage={omitf9} title="Developed a company that he now lives off" />
+                    <PhotoCard cardID="card4" speed="1" itemImage={omitf6} title="12,000 monthly plays on Spotify" />
+                    <PhotoCard cardID="card5" speed="4" itemImage={omitf10} title="Top 10 iTunes album" />
                 </MiddlePhotos>
                 <BottomStory />
             </main>
