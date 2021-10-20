@@ -1,16 +1,35 @@
 .photo-card {
-    height: 20vh;
+    height: 30vh;
     width: 30vw;
     margin-top: 7vh;
 }
 
-.photo-card-img {
-    height: 15vw;
-    width: 15vw;
+.photo-card-img { 
+    height: 17vw;
+    width: auto;
+}
+
+.photo-card-title {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .photo-card {
+        height: 50vh;
+        width: 50vw;
+        margin-top: 7vh;
+    }
+    .photo-card-img { 
+        height: auto;
+        width: 50vw;
+    }
+    .photo-card-title {
+        font-size: 14px;
+    }
 }
 
 .photo-card-subtitle {
-    text-align: left;
+    text-align: center;
 }
 
 
@@ -23,7 +42,9 @@
 }
 
 #card3 {
-    align-self: center;
+    align-self: flex-end;
+    margin-right: 15vw;
+    margin-top: 5vw;
 }
 
 #card4 {

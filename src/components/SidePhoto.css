@@ -1,0 +1,91 @@
+.outer-photo-container {
+    min-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 10vh;
+}
+
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    max-width: 32vw;
+    font-size: calc(10px + 0.8vw);
+    padding-top: 2vh;
+    padding-bottom: 17vh;
+}
+
+.left-text {
+    margin-left: 2vw;
+}
+
+.right-text {
+    margin-right: 2vw;
+}
+
+.sticky-photo {
+    width: 62vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    margin-top: 5vh;
+    height: 100vh;
+    overflow: hidden;
+    margin-bottom: 10vh;
+}
+
+.photo-right {
+    margin-right: 2vw;
+}
+
+.photo-left {
+    margin-left: 2vw;
+}
+
+
+.photo-container {
+    display: block;
+    width: 100%;
+    min-height: 150%;
+    overflow: visible;
+    object-fit: contain;
+}
+
+
+.photo-1 {
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .sticky-photo {
+        width: 52vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: stretch;
+        margin-top: 5vh;
+        height: 100vh;
+        overflow: hidden;
+        margin-bottom: 10vh;
+    }
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        max-width: 40vw;
+        font-size: 15px;
+        padding-top: 2vh;
+        padding-bottom: 17vh;
+    }
+  }

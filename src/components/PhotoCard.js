@@ -9,9 +9,9 @@ const PhotoCard = (props) => {
 
     return (
         <div data-scroll data-scroll-speed={props.speed} className="photo-card" id={props.cardID}>
-            <img data-scroll src={omitf} alt="img1" className="photo-card-img" />
-            <h3 data-scroll className="photo-card-title">Story Item</h3>
-            <p data-scroll className="photo-card-subtitle">Subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle</p>
+            <img data-scroll src={props.itemImage} alt="img1" className="photo-card-img" />
+            <h3 data-scroll className="photo-card-title">{props.title}</h3>
+            <p data-scroll className="photo-card-subtitle">{props.subtitle}</p>
         </div>
     );
 }

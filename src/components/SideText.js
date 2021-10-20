@@ -9,9 +9,9 @@ const SideText = () => {
 
     return (
         <div data-scroll-section className="side-text-container">
-            <h2 data-scroll data-scroll-speed="6" data-scroll-direction="horizontal" className="side-text">Side Scrolling Text - Side Scrolling Text</h2>
+            <h2 data-scroll data-scroll-speed="6" data-scroll-direction="horizontal" className="side-text">Our Man in the Field // Rattle Ventures</h2>
             <div className="bottom-border"></div>
-            <h2 data-scroll data-scroll-speed="-6" data-scroll-direction="horizontal" className="side-text">Side Scrolling Text - Side Scrolling Text</h2>
+            <h2 data-scroll data-scroll-speed="-6" data-scroll-direction="horizontal" className="side-text">Our Man in the Field // Rattle Ventures</h2>
             <div className="bottom-border"></div>
         </div >
     );

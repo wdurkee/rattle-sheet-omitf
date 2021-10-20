@@ -4,7 +4,7 @@ import './Nav.css'
 const Nav = () => {
     return (
         <div className="nav-container">
-            <p style={{ color: 'black' }}>Nav</p>
+            <a data-aos="fade-right" className="sheet-logo" href="https://songcamp.mirror.xyz/" target="_blank" rel="noreferrer">funsheet</a>
         </div>
     );
 }
